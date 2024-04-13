@@ -20,8 +20,7 @@ def scrape_contest_data(url):
         no_of_pages = int(driver.find_element(By.XPATH, f"/html/body/div[2]/div/div/div/div/nav/ul/li[{len(pages_nav)-1}]/a").text)
         print(f"No of Pages: {no_of_pages}")
 
-        for i in range(1, 1 + 1):
-        # for i in range(1, no_of_pages + 1):
+        for i in range(1, no_of_pages + 1):
             print(f"Page: {i}")
 
             rows = driver.find_elements(By.XPATH, "//div[@class='table-responsive']//table/tbody/tr")
