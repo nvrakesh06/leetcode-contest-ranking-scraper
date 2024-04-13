@@ -14,7 +14,7 @@ def find_element_with_retry(driver, locator, retries=5):
             time.sleep(0.2)
     raise NoSuchElementException("Element not found even after retries")
 
-csvfile = open('C:\\Users\\Rakesh Reddy NV\\OneDrive\\Documents\\OWN\\Projects (after getting placed)\\Random\\Leetcode-contest-rank-search\\contest_data.csv', 'w', newline='', encoding='utf-8')
+csvfile = open('C:\\Users\\Rakesh Reddy NV\\OneDrive\\Documents\\Leetcode-contest-rank-search\\contest_data.csv', 'w', newline='', encoding='utf-8')
 csv_writer = csv.writer(csvfile)
 csv_writer.writerow(['Rank', 'Name', 'Country', 'Score', 'Finish Time', 'Q1(3)', 'Q1(4)', 'Q1(5)', 'Q1(6)'])
 
